@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+}
+
+
+main div {
+    padding: 8px;
+    width: 100px;
+    height: 70px;
+    display: grid;
+    grid-auto-flow: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+/* knappene */
+
+.pad1 {
+   
+    background: white;
+    
+  }
+
+  .pad2 {
+    
+    background: pink;
+
+  }
+  .pad3 {
+    background: white;
+
+  }
+  .pad4 {
+    background: pink;
+
+  }
+  .pad5 {
+    background: white;
+
+  }
+  .pad6 {
+    background: pink;
+
+  }
+  .pad7 {
+    background: white;
+
+  }
+  .pad8 {
+    background: pink;
+
+  }
+  .pad9 {
+    background: white;
+
+  }
+
+
+main kbd {
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
+    
+}
+
+
+ 
+/* ballene */
+
+.visual > div {
+    position: absolute;
+    bottom: 0%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    transform: scale(1);
+    z-index: -1;
+  }
+  
+
+
+
+/* animasjon av baller */
+
+  @keyframes jump {
+    0% {
+      bottom: 100%;
+      left: 0%;
+      background-color: white;
+    }
+
+    20% {
+
+      background-color: white;
+    }
+  
+   
+  
+    50% {
+      bottom: 70%;
+      left: 50%;
+      transform: scale(2);
+      background-color: pink;
+      
+    }
+
+
+    70% {
+          background-color: white;
+        }
+
+
+  
+    100% {
+      bottom: 100%;
+      left: 100%;
+      background-color: white;
+    }
+  }
